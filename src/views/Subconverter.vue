@@ -223,11 +223,11 @@
 <script>
 const project = process.env.VUE_APP_PROJECT
 const remoteConfigSample = process.env.VUE_APP_SUBCONVERTER_REMOTE_CONFIG
-const gayhubRelease = process.env.VUE_APP_BACKEND_RELEASE
-const defaultBackend = process.env.VUE_APP_SUBCONVERTER_DEFAULT_BACKEND + '/sub?'
+const gayhubRelease = 'https://github.com/daycat/sub-web'
+const defaultBackend = 'https://subapi.daycat.space/sub?'
 const shortUrlBackend = process.env.VUE_APP_MYURLS_DEFAULT_BACKEND + '/short'
 const configUploadBackend = process.env.VUE_APP_CONFIG_UPLOAD_BACKEND + '/config/upload'
-const tgBotLink = process.env.VUE_APP_BOT_LINK
+const tgBotLink = 'https://t.me/daycat_playground'
 
 export default {
   data() {
@@ -255,7 +255,7 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [{ value: "https://subapi.daycat.space/sub?" }],
         remoteConfig: [
           {
             label: "universal",
